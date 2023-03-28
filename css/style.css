@@ -43,6 +43,7 @@
     box-shadow: 2px 2px 48px rgb(7, 240, 7);
     border-radius:18px;
     display: grid;
+    float: center;
     grid-template-rows: repeat(18, 1fr);
     grid-template-columns: repeat(18, 1fr);
     
