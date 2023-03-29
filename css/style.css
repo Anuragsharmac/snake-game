@@ -2,45 +2,125 @@
 *{
     padding: 0;
     margin: 0;
+    
 }
 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background:white;
+    
+    
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    font-family: "Sofia", sans-serif;
+    
+    font-size: 20px;
+    display: block;
+    color: rgb(8, 6, 6);
+    text-align: center;
+    padding: 14px 50px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    color: #f70000;
+  }
+
+
+  .txt{
+    font-family: "Sofia", sans-serif;
+    margin-top:90px;
+    margin-bottom: 18px;
+    text-align: center;
+    margin-left:340px ;
+    padding:19px;
+    background-color:white;
+    box-shadow: 2px 2px 12px  rgb(28, 28, 28);
+    width:600px;
+    border-radius: 16px;
+    color:rgb(38, 75, 0);
+    
+  }
+
+
+
+
+
 .body{
-    background-color: aquamarine; 
+    
+    background-color: white;
     min-height: 100vh;
     background-size: 100vw 100vh;
     background-repeat: no-repeat;
     display: flex;
+   
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
 
 #scoreBox{
-    position: absolute;
-    top: 9px;
-    right: 200px;
+    position: absolute; 
+    display: flex; 
+    flex-wrap: wrap;
+    top:9px; 
+    right: 140px;
     font-size: 35px;
     font-weight: bold;
     font-family: 'New Tegomin', serif;
-    color:rgb(13, 39, 18);
+   
+    box-shadow: 1px 1px 8px  rgb(28, 28, 28)/* rgb(4, 255, 21)*/;
+    
 }
 
 #hiscoreBox{
-    position: absolute;
-    top: 59px;
-    right: 140px;
+    position: absolute; 
+    top: 215px; 
+    right: 140px; 
     font-size: 39px;
     font-weight: bold;
     font-family: 'New Tegomin', serif;
-    color:rgb(13, 37, 18);
+    
+    box-shadow: 1px 1px 8px  rgb(28, 28, 28) /*rgb(4, 255, 21)*/;
+    
 }
+ #scoreBox,#hiscoreBox{
+    /* top: 10px;
+    right: 100px; */
+    color:rgb(38, 75, 0);
+    display:flex;
+    flex-wrap: wrap;
+    /* background:linear-gradient(rgb(140, 255, 153),rgb(254, 164, 241)); */
+    border-radius: 19px;
+    font-family: "Sofia", sans-serif;
+    float: center;
+    padding-left: 100px;
+    
+    margin-right:-90px;
+    margin-top: 370px;
+    width:350px;
+    height:180px; 
+   
 
+} 
 #board{
-    background: linear-gradient(red,blue);
+    /* background: linear-gradient(rgb(122, 219, 130),rgb(243, 128, 241)); */
     width: 99vmin;
-    margin-right:490px;
+    margin-right:520px;
+    margin-top: 120px;
+    margin-bottom: 60px;
     height: 92vmin;
     /* border: 4px solid black; */
-    box-shadow: 2px 2px 48px rgb(7, 240, 7);
+    box-shadow: 2px 2px 18px  rgb(28, 28, 28)/* rgb(31, 215, 43)*/;
     border-radius:18px;
     display: grid;
     float: center;
@@ -50,20 +130,39 @@
 }
 
 .head{
-    background: linear-gradient(rgb(240, 124, 124), rgb(228, 228, 129));
-    border: 2px solid rgb(34, 4, 34); 
+    background-color: rgb(190, 240, 10);
+    border:  solid rgb(34, 4, 34);
     transform: scale(1.02);
-    border-radius: 11px;
+    border-radius: 13px;  
+    border-width: 2px;
+    /* box-shadow: 2px 2px 19px rgb(3, 1, 1); */
+    
 }
 
 .snake{
     background-color: rgb(59, 237, 14);
     border: .25vmin solid rgb(225, 215, 215);
+    
     border-radius: 35px;
 }
 
 .food{
-    background: yellow;
-    border: .25vmin solid black;
+    background: red;
+    border: .28vmin solid black;
     border-radius: 40px;
+    animation: food 0.01s infinite alternate linear;
+}
+.food{
+    color:rgb(213, 11, 179);
+   
+}
+@keyframes food{
+    
+    from{
+        transform: scale(.9);
+
+    }
+    to{
+      transform: scale(1);
+    }
 }
