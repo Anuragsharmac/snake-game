@@ -13,6 +13,15 @@ let snakeArr = [
 
 food = {x: 6, y: 7};
 
+
+
+
+
+
+
+
+
+
 // Game Functions
 function main(ctime) {
     window.requestAnimationFrame(main);
@@ -23,6 +32,15 @@ function main(ctime) {
     lastPaintTime = ctime;
     gameEngine();
 }
+
+
+
+
+
+
+
+
+
 
 function isCollide(snake) {
     // If you bump into yourself 
@@ -147,3 +165,13 @@ window.addEventListener('keydown', e =>{
     }
 
 });
+
+
+
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("navbar");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
