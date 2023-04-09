@@ -14,26 +14,43 @@ ul {
   background: white;
   box-shadow: 1px 1px 9px rgb(230, 225, 225);
 }
+.icon{
+  margin-top: 13px;
+  text-align: center;
+  margin-left: 10px;
+  font-family: "Sofia", sans-serif;
+  text-shadow: 2px 2px 9px blue;
+}
 
-
-li {
-  float: left;
+.nav-right {
+  float:right;
+}
+li{
+  float:left;
 }
 
 li a {
   font-family: "Sofia", sans-serif;
-
+ 
   font-size: 20px;
   display: block;
   color: rgb(8, 6, 6);
   text-align: center;
-  padding: 14px 50px;
+  padding: 17px 50px;
   text-decoration: none;
+  margin-bottom: 5px;
+  border-radius: 4px;
 }
 
 /* Change the link color to #111 (black) on hover */
 li a:hover {
   color: #f70000;
+  border-color:  #f70000;
+  border-width: 2px;
+  border-style: solid;
+  font-size: 18px;
+  
+  
 }
 
 
@@ -50,12 +67,15 @@ li a:hover {
   width: 600px;
   border-radius: 16px;
   color: rgb(38, 75, 0);
+  border-color:  #f70000;
+  border-width: 2px;
+  border-style: solid;
   
 
 }
 
 .txt:hover{
-  box-shadow: 2px 2px 12px rgb(190, 188, 188);
+  box-shadow: 2px 2px 12px rgb(230, 30, 30);
   cursor: pointer;
 }
 
