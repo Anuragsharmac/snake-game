@@ -1,10 +1,20 @@
 var NumberOfDrumButtons = document.querySelectorAll(".drum").length;
 for (var i = 0; i < NumberOfDrumButtons; i++) {
     document.querySelectorAll(".drum")[i].addEventListener("click", function () {
-        //    audio1 = new Audio("./sounds/tom-1.mp3");
-        //    audio1.play();
+
         var buttonInnerHTML = this.innerHTML;
-        switch (buttonInnerHTML) {
+        makeSound(buttonInnerHTML);
+    });
+}
+ 
+document.addEventLlistener("keypress",function(event){
+    makeSound(event.key);
+});
+
+function makeSound(key){
+
+
+        switch (key) {
             case "w":
                 audio1 = new Audio("./sounds/tom-1.mp3");
                 audio1.play();
@@ -38,7 +48,7 @@ for (var i = 0; i < NumberOfDrumButtons; i++) {
         }
             
 
-    });
+  
 }
 
 
