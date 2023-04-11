@@ -1,0 +1,57 @@
+body {
+    background-color: #CCC;
+  }
+  
+  .selections {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .selection {
+    /* background-color:rgb(255, 255, 255); */
+    /* border:1px solid rgb(255, 0, 0); */
+    box-shadow: 2px 2px 8px gray;
+    margin-top:3rem;
+    /* margin-inline: 1rem; */
+    outline: none;
+    cursor: pointer;
+    font-size: 6rem;
+    transition: 100ms;
+  }
+  .selection:hover{
+    box-shadow: 1px 1px 10px rgb(255, 0, 0);
+
+  }
+  
+  .selection:hover {
+    transform: scale(1.2);
+  }
+  
+  .results {
+    margin-top: 1rem;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    font-size:1.5rem;
+    font-family: arial;
+    
+  }
+  
+  .result-score {
+    margin-left: .1rem;
+    font-size: 2rem;
+    
+    color:blue;
+  }
+  
+  .result-selection {
+    opacity: .6;
+    
+  }
+  
+  .result-selection.winner {
+    opacity: 1;
+    font-size: 2rem;
+  }
