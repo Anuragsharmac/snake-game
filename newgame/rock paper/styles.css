@@ -55,3 +55,22 @@ body {
     opacity: 1;
     font-size: 2rem;
   }
+
+  h1{
+   
+    box-sizing: border-box;
+    font-family: "Sofia", sans-serif;
+    margin-top: 20px;
+    margin-bottom: 18px;
+    text-align: center;
+    
+    padding: 19px;
+    background-color: rgb(231, 241, 141);
+    box-shadow: 2px 2px 12px rgb(230, 225, 225);
+    
+    border-radius: 16px;
+    color: rgb(38, 75, 0);
+    
+    border: 2px solid #2f8407 ;
+
+  }

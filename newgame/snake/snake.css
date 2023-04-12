@@ -1,0 +1,156 @@
+
+.txt {
+  box-sizing: border-box;
+  font-family: "Sofia", sans-serif;
+  margin-top: 20px;
+  margin-bottom: 18px;
+  text-align: center;
+  
+  padding: 19px;
+  background-color: white;
+  box-shadow: 2px 2px 12px rgb(230, 225, 225);
+  
+  border-radius: 16px;
+  color: rgb(38, 75, 0);
+  
+  border: 2px solid #f70000 ;
+
+}
+
+
+.txt:hover{
+  box-shadow: 2px 2px 12px rgb(230, 30, 30);
+  cursor: pointer;
+}
+
+.body {
+    
+    background-color: white;
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    padding: 0;
+    margin: 0;
+    
+  }
+  
+  #scoreBox {
+   
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 8px rgb(230, 225, 225);
+    
+    margin-left:15%;
+    
+  
+  }
+  
+  #hiscoreBox {
+    /* position: absolute; */
+   
+    /* top: 215px; */
+    /* right: 140px; */
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+    
+    box-shadow: 1px 1px 8px rgb(230, 225, 225);
+    margin-left:10%;
+  
+  }
+  
+  #scoreBox,
+  #hiscoreBox { 
+    color: rgb(38, 75, 0);
+    padding: 30px;
+    width:20rem;
+    border-radius: 19px;
+    font-family: "Sofia", sans-serif;
+    text-align: center;
+    display: inline-grid;
+    border: 2px solid #00f715 ;
+   
+  }
+  
+  #board {
+   
+    width: 99vmin;
+    
+   
+    margin-top:60px;
+    margin-bottom: 60px;
+    height: 92vmin;
+   
+    box-shadow: 2px 2px 18px rgb(230, 225, 225);
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    
+    border-radius: 18px;
+    display: grid;
+    border: 2px solid #08f700 ;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+  
+  }
+  #hiscoreBox:hover {
+    box-shadow: 2px 2px 18px rgb(161, 159, 159);
+    
+  }
+  #board:hover {
+    box-shadow: 2px 2px 18px rgb(220, 116, 116);
+   
+    
+    
+  }
+  #scoreBox:hover {
+    box-shadow: 2px 2px 18px rgb(161, 159, 159);
+    
+  }
+  
+  
+  .head {
+    background-color: rgb(190, 240, 10);
+   
+    /* height:24px;
+    width:24px; */
+    border: solid rgb(34, 4, 34);
+    transform: scale(1.02);
+    border-radius: 13px;
+    border-width: 2px;
+    /* box-shadow: 2px 2px 19px rgb(3, 1, 1); */
+  
+  }
+  
+  .snake {
+    background-color: rgb(59, 237, 14);
+    border: .25vmin solid rgb(225, 215, 215);
+  
+    border-radius: 35px;
+  }
+  
+  .food {
+    background: red;
+    border: .28vmin solid black;
+    border-radius: 40px;
+    animation: food 0.01s infinite alternate linear;
+  }
+  
+  .food {
+    color: rgb(213, 11, 179);
+  
+  }
+  
+  @keyframes food {
+  
+    from {
+      transform: scale(.9);
+  
+    }
+  
+    to {
+      transform: scale(1);
+    }
+  }
